@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Verification Page</title>
+    <!-- We need to adjust the paths to be relative -->
+    <link rel="stylesheet" href="frontend/css/checkout.css">
+    <style>
+        /* Add some basic styles to center the content */
+        body { display: flex; justify-content: center; align-items: center; height: 100vh; }
+        .checkout-container { width: 100%; max-width: 600px; }
+    </style>
+</head>
+<body>
+    <div class="checkout-container">
+        <section class="payment-method">
+            <h2>Payment Method</h2>
+            <div class="payment-option">
+                <input type="radio" id="cod" name="payment_method" value="cod" checked data-qr-code="false">
+                <label for="cod">Cash on Delivery (COD)</label>
+            </div>
+            <div class="payment-option">
+                <input type="radio" id="baridimob" name="payment_method" value="baridimob" data-qr-code="true">
+                <label for="baridimob">BaridiMob</label>
+            </div>
+        </section>
+        <div id="qr-code-display" class="qr-code-container" style="display: none;">
+            <h3>Scan to complete payment</h3>
+            <img src="assets/images/mock-qr-code.svg" alt="Mock QR Code">
+        </div>
+    </div>
+    <script src="frontend/js/checkout.js"></script>
+</body>
+</html>

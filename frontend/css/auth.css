@@ -1,0 +1,72 @@
+/* Auth Page Specific Styles */
+.auth-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 5%;
+    background-color: #f9f9f9;
+}
+
+.auth-container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.auth-container h2 {
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+.auth-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #e4393c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.auth-btn:hover {
+    background-color: #c32d2f;
+}
+
+.auth-switch {
+    margin-top: 20px;
+    color: #666;
+}
+
+.auth-switch a {
+    color: #e4393c;
+    text-decoration: none;
+    font-weight: bold;
+}
